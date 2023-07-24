@@ -24,10 +24,16 @@ function Maps() {
     const addMarkers = (map) => {
         locations.map(location => {
             const marker = new google.maps.Marker({
-                map: map,
+                // map: map,
                 position: { lat: location.lat, lng: location.lng }
             });
-            //marker.setMap(map);
+            const infoWindow = new google.maps.InfoWindow();
+            marker.addListener('click', (e) => {
+                infoWindow.setPosition({ lat: location.lat, lng: location.lng });
+                infoWindow.setContent(`<h3>${location.info}</h3> <br/> <p>Hipodrom Cad. no 5</p>`)
+                infoWindow.open(map);
+            })
+            marker.setMap(map);
         })
     }
 

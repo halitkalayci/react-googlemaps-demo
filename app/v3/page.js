@@ -3,8 +3,10 @@ import { VectorMap } from '@react-jvectormap/core'
 import React from 'react'
 import { trMill } from "@react-jvectormap/turkey"
 import { plates } from './plates'
+import { map } from './customMap'
 function Vectoral() {
     const onRegionClick = (e, code) => {
+        console.log(code);
         let plate = plates[code];
         let url = "tki.com/sorgula?plaka=" + plate;
     }

@@ -6,7 +6,7 @@ import { useRef } from 'react'
 export default function Home() {
   const map = useRef(null);
 
-  const script = useLoadScript({ googleMapsApiKey: "" });
+  const script = useLoadScript({ googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY });
   // 39.94826471353634, 32.829480863906234
   const openInfoWindow = () => {
     const infoWindow = new google.maps.InfoWindow({});

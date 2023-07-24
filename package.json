@@ -11,7 +11,10 @@
   "dependencies": {
     "@googlemaps/markerclusterer": "^2.3.2",
     "@react-google-maps/api": "^2.19.0",
+    "@react-jvectormap/core": "^1.0.4",
+    "@react-jvectormap/turkey": "^1.0.1",
     "@ubilabs/google-maps-react-hooks": "^2.0.2",
+    "jquery": "^3.7.0",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"

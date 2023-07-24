@@ -48,7 +48,7 @@ function Maps() {
             markers.push(marker);
         })
         // npm i @googlemaps/markerclusterer
-        new MarkerClusterer({ markers, map, algorithm: new SuperClusterAlgorithm({ radius: 200 }) })
+        new MarkerClusterer({ markers, map, algorithm: new SuperClusterAlgorithm({ radius: 100 }) })
     }
 
     const [mapContainer, setMapContainer] = useState(null)
